@@ -1,0 +1,161 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  padding: 0 16px;
+  height: 55px;
+}
+.nav-icon {
+  height: 24px;
+  width: 24px;
+}
+.nav-title {
+  color: rgb(117, 249, 145);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 55px);
+  max-width: 480px;
+  padding: 16px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+.form {
+  display: flex;
+}
+
+.input {
+  flex: 1;
+  margin-right: 8px;
+  box-shadow: var(--main-box-shadow);
+  border: 2px solid black;
+  border-radius: 6px;
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.button {
+  background-color: rgb(117, 249, 145);
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.todos {
+  box-shadow: var(--main-box-shadow);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  border-radius: 8px;
+  max-height: 640px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 60px;
+  padding: 12px 16px;
+  background-color: var(--secondary-background-color-light);
+  color: var(--main-font-color);
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  border-radius: 6px;
+  background-color: black;
+  color: rgb(117, 249, 145);
+}
+
+.todo-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 24px;
+  border-radius: 4px;
+
+  color: var(--label-font-color);
+  background-color: rgb(117, 249, 145);
+  box-shadow: var(--main-box-shadow-inset);
+  color: black;
+  border-radius: 6px;
+}
+.todo-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  color: rgb(117, 249, 145);
+  border-radius: 6px;
+}
+
+.todo-action-button {
+  border: none;
+  border-radius: 6px;
+  padding: unset;
+
+  height: 24px;
+  width: 24px;
+  color: rgb(117, 249, 145);
+}
+
+.image {
+  background-color: rgb(117, 249, 145);
+  border-radius: 6px;
+}
+
+.todo-divider {
+  border-bottom: 1px solid var(--main-border-color);
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px 0;
+  background-color: black;
+}
+.info-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-font-color);
+  font-size: 12px;
+}
+
+.info-total > p {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.delete-all-button {
+  background-color: unset;
+  border: none;
+  padding: unset;
+  color: var(--danger-font-color);
+  font-size: 12px;
+  font-weight: bold;
+}
